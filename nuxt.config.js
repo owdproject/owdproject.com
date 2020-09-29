@@ -14,7 +14,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Open Web Desktop is a project that aims to provide a simple environment to create your own web desktop. It\'s made with Vue.js and it has been designed to be fully modular' }
+      { hid: 'description', name: 'description', content: 'Open Web Desktop is a project that aims to provide a simple environment to create your own web desktop using Vue.js' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
@@ -106,5 +106,9 @@ export default {
     publicPath: '/dist/',
     transpile: ['lodash-es', 'vuetify/lib'],
     extractCSS: true,
+  },
+
+  generate: {
+    routes: ['/']
   }
 }

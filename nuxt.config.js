@@ -14,7 +14,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Open Web Desktop is a project that aims to provide a simple environment to create your own web desktop using Vue.js' }
+      { hid: 'description', name: 'description', content: 'Open Web Desktop is a fully modular project made with Vue.js that aims to provide a simple environment to create your own web desktop' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }

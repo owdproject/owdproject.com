@@ -23,7 +23,7 @@ export default {
 <style scoped lang="scss">
 .v-main {
   position: relative;
-  min-height: 320px;
+  min-height: 402px;
 
   .row {
     position: absolute;

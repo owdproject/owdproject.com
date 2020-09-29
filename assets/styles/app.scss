@@ -11,6 +11,11 @@ a {
   background: #444;
 }
 
+::-webkit-scrollbar{width:8px;background:#333}
+::-webkit-scrollbar-track{background:#222}
+::-webkit-scrollbar-thumb{background:#333;padding:4px;margin:4px}
+::-webkit-scrollbar-thumb:window-inactive{background:#222}
+
 #app {
   &.theme--dark {
     background: #161616 !important;

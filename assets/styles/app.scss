@@ -1,0 +1,18 @@
+a {
+  color: rgb(39, 117, 167);
+  text-decoration: none;
+}
+
+::-moz-selection {
+  background: #444;
+}
+
+::selection {
+  background: #444;
+}
+
+#app {
+  &.theme--dark {
+    background: #161616 !important;
+  }
+}

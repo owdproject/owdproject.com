@@ -1,0 +1,17 @@
+# Dependencies
+node_modules
+
+# Logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# Service worker
+static/sw.js
+
+# Code editor
+.idea

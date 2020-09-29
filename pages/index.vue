@@ -7,7 +7,7 @@
         A fully modular open-source web desktop made with Vue.js
       </p>
       <p class="mb-0">
-        <a :href="demoLink" @click="toggleDemo">Check the demo!</a>
+        <a @click="toggleDemo">Check the demo!</a>
       </p>
     </v-col>
   </v-row>

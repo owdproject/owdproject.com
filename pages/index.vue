@@ -60,7 +60,7 @@ export default {
 
   .v-btn.iframe-close {
     position: absolute;
-    bottom: 15px;
+    bottom: 9px;
     left: 50%;
     margin-left: -18px;
   }

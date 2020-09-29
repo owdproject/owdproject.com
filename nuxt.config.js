@@ -26,7 +26,7 @@ export default {
     SOCIAL_LINK_GITHUB: 'https://github.com/owdproject',
     SOCIAL_LINK_TWITTER: 'https://twitter.com/owdproject',
     SOCIAL_LINK_PATREON: 'https://patreon.com/hacklover',
-    DEMO_LINK: 'https://demo.owdproject.com'
+    DEMO_LINK: 'https://hacklover.net'
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

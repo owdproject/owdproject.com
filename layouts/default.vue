@@ -20,10 +20,19 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .v-main {
   position: relative;
   min-height: 402px;
+
+  a {
+    color: #3c91c7;
+    transition: color 0.5s ease-in-out;
+
+    &:hover {
+      color: #f0584a;
+    }
+  }
 
   .row {
     position: absolute;

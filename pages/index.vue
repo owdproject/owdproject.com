@@ -13,9 +13,10 @@
   </v-row>
 
   <div v-else>
-    <iframe :src="demoLink" />
+    <v-progress-circular indeterminate color="#444" class="iframe-loader" v-if="!iframeLoaded" />
+    <iframe :src="demoLink" v-show="iframeLoaded" @load="iframeLoaded = true" />
 
-    <v-btn text icon @click="toggleDemo" class="iframe-close">
+    <v-btn text icon @click="toggleDemo" class="iframe-close" v-if="iframeLoaded">
       <v-icon>mdi-close</v-icon>
     </v-btn>
   </div>
@@ -33,6 +34,11 @@ export default {
       titleTemplate: 'A fully modular web desktop - %s',
     }
   },
+  data() {
+    return {
+      iframeLoaded: false
+    }
+  },
   computed: {
     ...mapGetters({
       'demoActive': 'demo/active'
@@ -43,6 +49,10 @@ export default {
       e.preventDefault()
 
       this.$store.commit('demo/SET_DEMO', !this.demoActive)
+
+      if (this.demoActive === false) {
+        this.iframeLoaded = false
+      }
     }
   }
 }
@@ -56,6 +66,13 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  .iframe-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -16px 0 0 -16px;
   }
 
   .v-btn.iframe-close {

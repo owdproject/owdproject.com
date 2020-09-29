@@ -11,7 +11,7 @@
             <v-icon size="30">mdi-twitter</v-icon>
           </a>
           <a :href="socialLinkPatreon" target="_blank">
-            <v-icon size="29">mdi-patreon</v-icon>
+            <v-icon size="28">mdi-patreon</v-icon>
           </a>
         </div>
 

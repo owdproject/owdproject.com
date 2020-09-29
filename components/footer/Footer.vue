@@ -41,6 +41,7 @@
 <style scoped lang="scss">
 .v-footer {
   user-select: none;
+  box-shadow: inset 0 1px 0 0 #2e2e2e !important;
 
   .footer-links {
     a {

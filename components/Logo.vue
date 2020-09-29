@@ -4,7 +4,7 @@
       <v-icon>mdi-flask-outline</v-icon>
     </v-btn>
     <v-btn color="#2775a7" class="menu">
-      <v-icon style="left: 1px; top: 5px" size="29px">mdi-format-color-fill</v-icon>
+      <v-icon style="left: 1px; top: 5px" size="28px">mdi-format-color-fill</v-icon>
     </v-btn>
     <v-btn color="#4c4c4c" class="menu">
       <v-icon>mdi-radio</v-icon>

@@ -38,7 +38,7 @@ export default {
   mixins: [mixinLinks],
   head() {
     return {
-      titleTemplate: 'A fully modular web desktop - %s',
+      titleTemplate: 'A fully modular web desktop in Vue.js - %s',
     }
   },
   data() {

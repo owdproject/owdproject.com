@@ -96,7 +96,7 @@ export default {
     start_url: process.env.BASE_URL,
     description: 'A fully modular open-source web desktop made with Vue.js',
     display: 'standalone',
-    theme_color: '#2775a7',
+    theme_color: '#272727',
     background_color: '#121212',
     orientation: 'any',
   },

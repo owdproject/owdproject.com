@@ -7,7 +7,7 @@
         A fully modular open-source web desktop made with Vue.js
       </p>
       <p class="mb-0">
-        <a @click="toggleDemo">Check the demo!</a>
+        <a @click="toggleDemo">Check the demo</a>
 
         <v-tooltip bottom attach=".owd-intro">
           <template v-slot:activator="{ on, attrs }">
@@ -68,6 +68,8 @@ export default {
 <style scoped lang="scss">
   .owd-intro {
     p {
+      color: #999;
+
       .v-icon {
         margin-left: 7.5px;
         vertical-align: -3px;

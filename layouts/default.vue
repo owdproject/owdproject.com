@@ -26,11 +26,11 @@ export default {
   min-height: 402px;
 
   a {
-    color: #3c91c7;
+    color: #f0584a;
     transition: color 0.5s ease-in-out;
 
     &:hover {
-      color: #f0584a;
+      color: #666;
     }
   }
 

@@ -18,11 +18,6 @@
       <v-icon :left="$vuetify.breakpoint.smAndUp">mdi-github</v-icon>
       <span class="hidden-xs-only" v-text="`GitHub`" />
     </v-btn>
-
-    <v-btn text class="ml-2" :icon="$vuetify.breakpoint.xsOnly" :href="socialLinkPatreon" target="_blank">
-      <v-icon :left="$vuetify.breakpoint.smAndUp">mdi-patreon</v-icon>
-      <span class="hidden-xs-only" v-text="`Support`" />
-    </v-btn>
   </v-toolbar>
 </template>
 

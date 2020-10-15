@@ -26,6 +26,7 @@ export default {
     SOCIAL_LINK_GITHUB: 'https://github.com/owdproject',
     SOCIAL_LINK_TWITTER: 'https://twitter.com/owdproject',
     SOCIAL_LINK_PATREON: 'https://patreon.com/hacklover',
+    SOCIAL_LINK_DISCORD: 'http://discord.gg/3KFVP8b',
     DEMO_LINK: 'https://hacklover.net/#patreon'
   },
 

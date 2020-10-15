@@ -6,6 +6,9 @@ export default {
     socialLinkTwitter() {
       return process.env.SOCIAL_LINK_TWITTER
     },
+    socialLinkDiscord() {
+      return process.env.SOCIAL_LINK_DISCORD
+    },
     socialLinkPatreon() {
       return process.env.SOCIAL_LINK_PATREON
     },

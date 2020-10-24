@@ -23,7 +23,7 @@ export default {
 
   env: {
     BASE_URL: 'https://owdproject.com',
-    SOCIAL_LINK_GITHUB: 'https://github.com/owdproject',
+    SOCIAL_LINK_GITHUB: 'https://github.com/owdproject/owd-client',
     SOCIAL_LINK_TWITTER: 'https://twitter.com/owdproject',
     SOCIAL_LINK_PATREON: 'https://patreon.com/hacklover',
     SOCIAL_LINK_DISCORD: 'http://discord.gg/3KFVP8b',

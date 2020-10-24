@@ -21,7 +21,7 @@
         <div class="footer-copyright">
           <p class="mb-0">
             Released under the
-            <a :href="`${socialLinkGitHub}/owd-client/blob/master/LICENSE`" target="_blank">MIT License</a>
+            <a :href="`${socialLinkGitHub}/blob/master/LICENSE`" target="_blank">MIT License</a>
             <br />
             Copyright &copy; 2020 hacklover
           </p>

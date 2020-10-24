@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center" align="center" v-if="!demoActive">
     <v-col cols="12" class="owd-intro text-center">
-      <Logo style="margin: 0 auto" />
+      <Logo square style="margin: 0 auto" />
 
       <p class="mt-8">
         A fully modular open-source web desktop made with Vue.js
@@ -21,7 +21,7 @@
 
   <div v-else>
     <v-progress-circular indeterminate color="#444" class="iframe-loader" v-if="!iframeLoaded" />
-    <iframe :src="demoLink" v-show="iframeLoaded" @load="iframeLoaded = true" />
+    <iframe :src="demoLink" v-show="iframeLoaded" @load="iframeLoaded = true; $store.commit('demo/SET_DEMO_LOADED', true)" />
 
     <v-btn text icon @click="toggleDemo" class="iframe-close" v-if="iframeLoaded">
       <v-icon>mdi-close</v-icon>
@@ -55,7 +55,7 @@ export default {
     toggleDemo(e) {
       e.preventDefault()
 
-      this.$store.commit('demo/SET_DEMO', !this.demoActive)
+      this.$store.commit('demo/SET_DEMO_ACTIVE', !this.demoActive)
 
       if (this.demoActive === false) {
         this.iframeLoaded = false

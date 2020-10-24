@@ -1,6 +1,8 @@
 <template>
   <v-toolbar max-height="64px" height="64px" elevation="0">
-    <v-toolbar-title>Open Web Desktop</v-toolbar-title>
+    <Logo square :class="['mr-12', {'visible': visible}]">
+      <v-toolbar-title>Open Web Desktop</v-toolbar-title>
+    </Logo>
 
     <v-spacer />
 
@@ -23,15 +25,51 @@
 
 <script>
 import mixinLinks from "../../mixins/mixinLinks";
+import Logo from "~/components/Logo";
+import {mapGetters} from "vuex";
 
 export default {
   name: "Header",
-  mixins: [mixinLinks]
+  components: {Logo},
+  mixins: [mixinLinks],
+  data() {
+    return {
+      visible: false
+    }
+  },
+  computed: {
+    ...mapGetters({
+      'demoActive': 'demo/active'
+    })
+  },
+  mounted() {
+    this.$store.subscribe((mutation) => {
+      if (mutation.type === 'demo/SET_DEMO_LOADED') {
+        this.visible = mutation.payload
+      }
+      if (mutation.type === 'demo/SET_DEMO_ACTIVE') {
+        this.visible = mutation.payload
+      }
+    })
+  }
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
   .v-toolbar {
     user-select: none;
+
+    .logo {
+      transition: transform 1s ease-in-out;
+      transform: translateX(-50px);
+      will-change: transform;
+
+      .logo-content {
+        zoom: 0.3;
+      }
+      &.visible {
+        transform: translateX(8px);
+      }
+    }
   }
 </style>

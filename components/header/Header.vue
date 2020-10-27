@@ -1,6 +1,6 @@
 <template>
   <v-toolbar max-height="64px" height="64px" elevation="0">
-    <Logo square :class="['mr-12', {'visible': visible}]">
+    <Logo square small :class="['mr-12', {'visible': visible}]">
       <v-toolbar-title>Open Web Desktop</v-toolbar-title>
     </Logo>
 
@@ -61,12 +61,9 @@ export default {
 
     .logo {
       transition: transform 1s ease-in-out;
-      transform: translateX(-50px);
+      transform: translateX(-56px);
       will-change: transform;
 
-      .logo-content {
-        zoom: 0.3;
-      }
       &.visible {
         transform: translateX(8px);
       }

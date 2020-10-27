@@ -1,17 +1,17 @@
 <template>
-  <div :class="['logo', {square}]">
+  <div :class="['logo', {'logo-square': square, 'logo-small': small}]">
     <div class="logo-content">
       <v-btn color="#2775a7" class="menu">
         <v-icon>mdi-flask-outline</v-icon>
       </v-btn>
       <v-btn color="#2775a7" class="menu">
-        <v-icon style="left: 1px; top: 5px" size="29px">mdi-format-color-fill</v-icon>
+        <v-icon>mdi-format-color-fill</v-icon>
       </v-btn>
       <v-btn color="#4c4c4c" class="menu">
         <v-icon>mdi-radio</v-icon>
       </v-btn>
       <v-btn color="#f0584a" class="menu">
-        <v-icon size="23px">mdi-patreon</v-icon>
+        <v-icon>mdi-patreon</v-icon>
       </v-btn>
     </div>
 
@@ -23,7 +23,8 @@
 export default {
   name: "Logo",
   props: {
-    square: Boolean
+    square: Boolean,
+    small: Boolean,
   }
 }
 </script>
@@ -48,20 +49,60 @@ export default {
 
       .v-icon {
         color: white;
+
+        &.mdi-format-color-fill {
+          top: 5px;
+          left: 1px;
+          font-size: 29px;
+        }
+
+        &.mdi-patreon {
+          font-size: 23px;
+        }
       }
     }
   }
 
-  &.square {
+  &.logo-square {
     .logo-content {
       width: 115px;
+    }
+  }
+
+  &.logo-small {
+    width: 40px;
+
+    .logo-content {
+      width: 34px;
+      height: 34px;
+      line-height: 16px;
+      padding: 0;
+      border-radius: 0;
+
+      .v-btn {
+        width: 14px;
+        height: 14px;
+        min-height: 14px;
+        margin: 1px -2px 0 0;
+        padding: 0;
+        border-radius: 2px;
+
+        .v-icon {
+          font-size: 8px !important;
+
+          &.mdi-format-color-fill {
+            top: inherit;
+            left: inherit;
+          }
+        }
+      }
     }
   }
 
   .v-toolbar__title {
     position: absolute;
     top: 2px;
-    left: calc(100% + 24px);
+    left: calc(100% + 28px);
   }
 }
 </style>

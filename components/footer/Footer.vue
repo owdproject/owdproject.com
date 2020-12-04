@@ -4,7 +4,7 @@
       <v-col>
 
         <div class="footer-links mb-6">
-          <a :href="socialLinkGitHub" target="_blank">
+          <a :href="owdLinkRepository" target="_blank">
             <v-icon size="28">mdi-github</v-icon>
           </a>
           <a :href="socialLinkTwitter" target="_blank">
@@ -21,7 +21,7 @@
         <div class="footer-copyright">
           <p class="mb-0">
             Released under the
-            <a :href="`${socialLinkGitHub}/blob/master/LICENSE`" target="_blank">MIT License</a>
+            <a :href="`${owdLinkRepository}/blob/master/LICENSE`" target="_blank">MIT License</a>
             <br />
             Copyright &copy; 2020 hacklover
           </p>

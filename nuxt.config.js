@@ -27,7 +27,8 @@ export default {
     SOCIAL_LINK_TWITTER: 'https://twitter.com/owdproject',
     SOCIAL_LINK_PATREON: 'https://patreon.com/hacklover',
     SOCIAL_LINK_DISCORD: 'http://discord.gg/3KFVP8b',
-    DEMO_LINK: 'https://hacklover.net/#patreon'
+    OWD_LINK_MODULES: 'https://github.com/topics/owd-modules',
+    OWD_LINK_DEMO: 'https://demo.owdproject.com'
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

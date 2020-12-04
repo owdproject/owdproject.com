@@ -21,7 +21,7 @@
 
   <div v-else>
     <v-progress-circular indeterminate color="#444" class="iframe-loader" v-if="!iframeLoaded" />
-    <iframe :src="demoLink" v-show="iframeLoaded" @load="iframeLoaded = true; $store.commit('demo/SET_DEMO_LOADED', true)" />
+    <iframe :src="owdLinkDemo" v-show="iframeLoaded" @load="iframeLoaded = true; $store.commit('demo/SET_DEMO_LOADED', true)" />
 
     <v-btn text icon @click="toggleDemo" class="iframe-close" v-if="iframeLoaded">
       <v-icon>mdi-close</v-icon>

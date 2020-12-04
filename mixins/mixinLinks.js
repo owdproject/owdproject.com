@@ -1,8 +1,5 @@
 export default {
   computed: {
-    socialLinkGitHub() {
-      return process.env.SOCIAL_LINK_GITHUB
-    },
     socialLinkTwitter() {
       return process.env.SOCIAL_LINK_TWITTER
     },
@@ -12,8 +9,14 @@ export default {
     socialLinkPatreon() {
       return process.env.SOCIAL_LINK_PATREON
     },
-    demoLink() {
-      return process.env.DEMO_LINK
+    owdLinkRepository() {
+      return process.env.SOCIAL_LINK_GITHUB
+    },
+    owdLinkModules() {
+      return process.env.OWD_LINK_MODULES
+    },
+    owdLinkDemo() {
+      return process.env.OWD_LINK_DEMO
     }
   }
 }

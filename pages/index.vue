@@ -8,13 +8,6 @@
       </p>
       <p class="mb-0">
         <a @click="toggleDemo">Check the demo</a>
-
-        <v-tooltip bottom attach=".owd-intro">
-          <template v-slot:activator="{ on, attrs }">
-            <v-icon v-on="on">mdi-information-variant</v-icon>
-          </template>
-          <span>This demo is my personal website and it's based on Open Web Desktop.<br />Check <b>owd-client</b> on GitHub if you are looking for a fresh demo!</span>
-        </v-tooltip>
       </p>
     </v-col>
   </v-row>

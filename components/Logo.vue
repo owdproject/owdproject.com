@@ -1,16 +1,16 @@
 <template>
   <div :class="['logo', {'logo-square': square, 'logo-small': small}]">
     <div class="logo-content">
-      <v-btn color="#2775a7" class="menu">
+      <v-btn color="#2775a7">
         <v-icon>mdi-flask-outline</v-icon>
       </v-btn>
-      <v-btn color="#2775a7" class="menu">
+      <v-btn color="#2775a7">
         <v-icon>mdi-format-color-fill</v-icon>
       </v-btn>
-      <v-btn color="#4c4c4c" class="menu">
+      <v-btn color="#4c4c4c">
         <v-icon>mdi-radio</v-icon>
       </v-btn>
-      <v-btn color="#f0584a" class="menu">
+      <v-btn color="#f0584a">
         <v-icon>mdi-patreon</v-icon>
       </v-btn>
     </div>
@@ -39,12 +39,13 @@ export default {
     user-select: none;
     overflow: hidden;
 
-    .menu {
+    .v-btn {
       box-sizing: border-box;
       width: 48px;
       min-width: auto !important;
       min-height: 48px;
       margin: 3px 1px;
+      cursor: default;
       box-shadow: none;
 
       .v-icon {
